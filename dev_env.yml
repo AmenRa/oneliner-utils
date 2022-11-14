@@ -1,0 +1,14 @@
+name: oneliner_utils
+dependencies:
+  - python=3.7
+  - black
+  - ipykernel
+  - ipywidgets
+  - conda-forge::mkdocs-material
+  - conda-forge::mkdocs-autorefs
+  - conda-forge::mkdocstrings 
+  - conda-forge::mkdocstrings-python 
+  - pygments>=2.12
+  - notebook
+  - numpy
+  - orjson
