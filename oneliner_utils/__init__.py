@@ -5,6 +5,7 @@ __all__ = [
     "read_csv",
     "read_gzip",
     "read_gzip_list",
+    "read_gzip_json_list",
     "read_json",
     "read_jsonl",
     "read_list",
@@ -16,6 +17,7 @@ __all__ = [
     "load_csv",
     "load_gzip",
     "load_gzip_list",
+    "load_gzip_json_list",
     "load_json",
     "load_jsonl",
     "load_list",
@@ -27,6 +29,7 @@ __all__ = [
     "write_csv",
     "write_gzip",
     "write_gzip_list",
+    "write_gzip_json_list",
     "write_json",
     "write_jsonl",
     "write_list",
@@ -38,6 +41,7 @@ __all__ = [
     "save_csv",
     "save_gzip",
     "save_gzip_list",
+    "save_gzip_json_list",
     "save_json",
     "save_jsonl",
     "save_list",
@@ -49,8 +53,10 @@ __all__ = [
 from .handlers.csv_handler import read_csv, write_csv
 from .handlers.gzip_handler import (
     read_gzip,
+    read_gzip_json_list,
     read_gzip_list,
     write_gzip,
+    write_gzip_json_list,
     write_gzip_list,
 )
 from .handlers.json_handler import read_json, write_json
@@ -68,6 +74,7 @@ load = read
 load_csv = read_csv
 load_gzip = read_gzip
 load_gzip_list = read_gzip_list
+load_gzip_json_list = read_gzip_json_list
 load_json = read_json
 load_jsonl = read_jsonl
 load_list = read_list
@@ -79,6 +86,7 @@ save = write
 save_csv = write_csv
 save_gzip = write_gzip
 save_gzip_list = write_gzip_list
+save_gzip_json_list = write_gzip_json_list
 save_json = write_json
 save_jsonl = write_jsonl
 save_list = write_list

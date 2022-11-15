@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="oneliner-utils",
-    version="0.1",
+    version="0.1.0",
     author="Elias Bassani",
     author_email="elias.bssn@gmail.com",
     description="Oneline Utils for Python",
@@ -13,7 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/AmenRa/oneliner-utils",
     packages=setuptools.find_packages(),
-    install_requires=["numpy", "cbor2", "lz4"],
+    install_requires=["numpy", "orjson", "lz4"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

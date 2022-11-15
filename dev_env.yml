@@ -5,6 +5,7 @@ dependencies:
   - ipykernel
   - ipywidgets
   - notebook
+  - pytest
   - conda-forge::mkdocs-material
   - conda-forge::mkdocs-autorefs
   - conda-forge::mkdocstrings 
@@ -12,3 +13,4 @@ dependencies:
   - pygments>=2.12
   - numpy
   - orjson
+  - lz4
