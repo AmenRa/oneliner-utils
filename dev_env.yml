@@ -4,11 +4,11 @@ dependencies:
   - black
   - ipykernel
   - ipywidgets
+  - notebook
   - conda-forge::mkdocs-material
   - conda-forge::mkdocs-autorefs
   - conda-forge::mkdocstrings 
   - conda-forge::mkdocstrings-python 
   - pygments>=2.12
-  - notebook
   - numpy
   - orjson
