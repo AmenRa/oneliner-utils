@@ -1,4 +1,5 @@
 __all__ = [
+    "create_path",
     "join_path",
     #
     "read",
@@ -64,7 +65,7 @@ from .handlers.jsonl_handler import read_jsonl, write_jsonl
 from .handlers.list_handler import read_list, write_list
 from .handlers.lz4_handler import read_lz4, write_lz4
 from .handlers.numpy_handler import read_numpy, write_numpy
-from .handlers.path_handler import join_path
+from .handlers.path_handler import create_path, join_path
 from .handlers.pickle_handler import read_pickle, write_pickle
 from .handlers.string_handler import read, write
 

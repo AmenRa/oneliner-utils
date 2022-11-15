@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="oneliner-utils",
-    version="0.1.0",
+    version="0.1.1",
     author="Elias Bassani",
     author_email="elias.bssn@gmail.com",
     description="Oneline Utils for Python",
