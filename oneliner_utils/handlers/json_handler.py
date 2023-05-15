@@ -17,4 +17,9 @@ def write_json(x: Dict, path: Union[str, Path]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
 
     with open(path, "wb") as f:
-        f.write(orjson.dumps(x, option=orjson.OPT_INDENT_2))
+        f.write(
+            orjson.dumps(
+                x,
+                option=(orjson.OPT_INDENT_2 | orjson.OPT_SERIALIZE_NUMPY),
+            )
+        )

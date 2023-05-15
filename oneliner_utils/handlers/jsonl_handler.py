@@ -41,4 +41,10 @@ def write_jsonl(
 
     with open(path, "wb") as f:
         for y in x:
-            f.write(orjson.dumps(apply_callback(y, callback)) + "\n".encode())
+            f.write(
+                orjson.dumps(
+                    apply_callback(y, callback),
+                    option=orjson.OPT_SERIALIZE_NUMPY,
+                )
+                + "\n".encode()
+            )
